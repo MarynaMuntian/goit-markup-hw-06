@@ -822,13 +822,13 @@ footer input {
   color: var(--link-color);
 }
 
-.form-item.comment {
-  margin-bottom: 20px;
+form input {
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
-textarea {
-  padding: 12px 16px;
-  resize: none;
+textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.167;
@@ -836,8 +836,32 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form-item.comment {
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
 .form-checkbox {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--link-color);
+}
+
+.form-checkbox a {
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
 
 form button {
@@ -855,4 +879,5 @@ form button {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
