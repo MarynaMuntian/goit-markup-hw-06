@@ -808,6 +808,7 @@ footer input {
 }
 
 .form-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -822,8 +823,14 @@ footer input {
   color: var(--link-color);
 }
 
+.icon-person {
+  position: absolute;
+  left: 12px;
+  top: 29px;
+}
+
 form input {
-  padding: 11px 12px;
+  padding: 11px 12px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -857,6 +864,26 @@ textarea {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--link-color);
+}
+
+.form-checkbox svg {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form-checkbox a {
