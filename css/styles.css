@@ -886,9 +886,9 @@ label {
 } */
 
 .checkbox {
-  /* appearance: none; */
+  appearance: none;
   position: absolute;
-  /* top: 50%;
+  top: 50%;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -897,11 +897,16 @@ label {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden; */
+  overflow: hidden;
 }
 
 .checkbox:checked + .icon-checkbox {
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
 }
 
 .form-checkbox a {
