@@ -855,6 +855,10 @@ textarea {
   border-radius: 4px;
 }
 
+label {
+  display: inline-block;
+}
+
 .form-checkbox {
   margin-left: auto;
   margin-right: auto;
@@ -866,15 +870,25 @@ textarea {
   color: var(--link-color);
 }
 
-.form-checkbox svg {
+.icon-checkbox {
+  display: inline-block;
   margin-right: 8px;
   vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--primary-color);
+  border-radius: 2px;
 }
 
+/* .form-checkbox svg {
+  margin-right: 8px;
+  vertical-align: middle;
+} */
+
 .checkbox {
-  appearance: none;
+  /* appearance: none; */
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -883,7 +897,11 @@ textarea {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  overflow: hidden; */
+}
+
+.checkbox:checked + .icon-checkbox {
+  background-color: var(--accent-color);
 }
 
 .form-checkbox a {
