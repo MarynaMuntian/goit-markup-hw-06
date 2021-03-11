@@ -851,10 +851,12 @@ form svg {
 
 .form-input:focus-within input {
   border-color: var(--accent-color);
+  outline: none;
 }
 
 .form-input:focus-within textarea {
   border-color: var(--accent-color);
+  outline: none;
 }
 
 textarea::placeholder {
